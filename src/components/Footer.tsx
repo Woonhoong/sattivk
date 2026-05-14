@@ -35,7 +35,7 @@ export default function Footer() {
           <div style={{ display: 'flex', gap: '16px' }}>
             {/* Social Links */}
             {[
-              { name: 'FB', url: 'https://www.facebook.com/people/Sattvik-Spices/61572628861924/#' },
+              { name: 'FB', url: 'https://www.facebook.com/profile.php?id=61578321000443#' },
               { name: 'IG', url: 'https://www.instagram.com/sattvikspicesuae/' },
               { name: 'X', url: 'https://x.com/Sattvikspices' },
               { name: 'LI', url: 'https://www.linkedin.com/company/sattvik-spices-uae' }
@@ -64,7 +64,7 @@ export default function Footer() {
               <span style={{ color: '#C6A86B' }}>T:</span> 04 343 5640
             </li>
             <li style={{ marginBottom: '12px' }}>
-              <span style={{ color: '#C6A86B' }}>M:</span> 00 971 56 958 8186
+              <span style={{ color: '#C6A86B' }}>M:</span> +971 56 858 8186
             </li>
             <li style={{ marginBottom: '12px' }}>
               <span style={{ color: '#C6A86B' }}>E:</span> info@sattvik.ae
@@ -78,9 +78,8 @@ export default function Footer() {
             Visit Us
           </h4>
           <p style={{ fontSize: '14px', lineHeight: 1.6 }}>
-            Off# M-17 Al Ghurg Building<br />
-            Street 15 B<br />
-            Al Karama Dubai<br />
+            Tamani Arts Building<br />
+            Business Bay Dubai<br />
             UAE
           </p>
         </div>

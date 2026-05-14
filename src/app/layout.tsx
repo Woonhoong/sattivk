@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   },
 };
 
+import WhatsAppWidget from "@/components/WhatsAppWidget";
+
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +26,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppWidget />
+      </body>
     </html>
   );
 }

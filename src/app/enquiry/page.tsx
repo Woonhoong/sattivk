@@ -61,39 +61,38 @@ export default function EnquiryPage() {
             gap: '24px',
             backdropFilter: 'blur(20px)',
           }}
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert('Inquiry sent successfully. We will contact you shortly.');
-          }}
+          action="https://formsubmit.co/info@sattvik.ae"
+          method="POST"
         >
+          <input type="hidden" name="_captcha" value="false" />
           {/* Name */}
           <div style={{ gridColumn: 'span 2' }}>
             <label style={labelStyle}>Full Name</label>
-            <input type="text" placeholder="John Doe" required style={inputStyle} />
+            <input type="text" name="name" placeholder="John Doe" required style={inputStyle} />
           </div>
 
           {/* Email */}
           <div>
             <label style={labelStyle}>Business Email</label>
-            <input type="email" placeholder="john@company.com" required style={inputStyle} />
+            <input type="email" name="email" placeholder="john@company.com" required style={inputStyle} />
           </div>
 
           {/* Phone */}
           <div>
             <label style={labelStyle}>Phone Number</label>
-            <input type="tel" placeholder="+971 -- --- ----" required style={inputStyle} />
+            <input type="tel" name="phone" placeholder="+971 -- --- ----" required style={inputStyle} />
           </div>
 
           {/* Company */}
           <div style={{ gridColumn: 'span 2' }}>
             <label style={labelStyle}>Company Name</label>
-            <input type="text" placeholder="Global Traders Ltd" required style={inputStyle} />
+            <input type="text" name="company" placeholder="Global Traders Ltd" required style={inputStyle} />
           </div>
 
           {/* Interest */}
           <div style={{ gridColumn: 'span 2' }}>
             <label style={labelStyle}>Primary Interest</label>
-            <select required style={inputStyle}>
+            <select name="interest" required style={inputStyle}>
               <option value="spices">Premium Spices</option>
               <option value="fruits">Fresh Fruits</option>
               <option value="vegs">Fresh Vegetables</option>
@@ -104,7 +103,7 @@ export default function EnquiryPage() {
           {/* Message */}
           <div style={{ gridColumn: 'span 2' }}>
             <label style={labelStyle}>Requirement Details</label>
-            <textarea placeholder="Tell us about quantities, shipping destination, etc." required style={{ ...inputStyle, minHeight: '150px', resize: 'vertical' }} />
+            <textarea name="message" placeholder="Tell us about quantities, shipping destination, etc." required style={{ ...inputStyle, minHeight: '150px', resize: 'vertical' }} />
           </div>
 
           {/* Submit */}
@@ -125,7 +124,7 @@ export default function EnquiryPage() {
                 transition: 'background 0.3s ease',
               }}
             >
-              Submit Inquiry
+              <button type="submit" style={{ all: 'unset', width: '100%', height: '100%', textAlign: 'center' }}>Submit Inquiry</button>
             </motion.button>
           </div>
         </motion.form>

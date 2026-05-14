@@ -62,6 +62,41 @@ const PRODUCTS = [
     image: '/products/artichokes.png',
     description: 'Freshly harvested artichokes, graded for size and quality.',
   },
+  {
+    id: 9,
+    name: 'Premium Cloves',
+    category: 'Spices',
+    image: '/products/item1.png',
+    description: 'High-quality whole cloves with a strong, pungent aroma.',
+  },
+  {
+    id: 10,
+    name: 'Green Cardamom',
+    category: 'Spices',
+    image: '/products/item2.jpg',
+    description: 'Fresh green cardamom pods, bursting with sweet and floral notes.',
+  },
+  {
+    id: 11,
+    name: 'Cinnamon Sticks',
+    category: 'Spices',
+    image: '/products/item3.jpg',
+    description: 'Authentic cinnamon sticks with a warm, sweet flavor profile.',
+  },
+  {
+    id: 12,
+    name: 'Coriander Seeds',
+    category: 'Spices',
+    image: '/products/item4.jpg',
+    description: 'Whole coriander seeds with a bright, citrusy flavor.',
+  },
+  {
+    id: 13,
+    name: 'Whole Black Peppercorns',
+    category: 'Spices',
+    image: '/products/item5.jpg',
+    description: 'Premium whole black peppercorns, perfect for fresh grinding.',
+  },
 ];
 
 export default function CollectionsPage() {
