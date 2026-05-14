@@ -61,10 +61,10 @@ export default function EnquiryPage() {
             gap: '24px',
             backdropFilter: 'blur(20px)',
           }}
-          action="https://formsubmit.co/info@sattvik.ae"
+          action="https://api.web3forms.com/submit"
           method="POST"
         >
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="access_key" value="23d1b125-1d53-4e9a-91e2-cd1c448cf4ac" />
           {/* Name */}
           <div style={{ gridColumn: 'span 2' }}>
             <label style={labelStyle}>Full Name</label>
